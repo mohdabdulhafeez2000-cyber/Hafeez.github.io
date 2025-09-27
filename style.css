@@ -1,63 +1,82 @@
-/* --- Project Detail Page --- */
+/* ===== General Page Styling ===== */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f7f4; /* soft off-white */
+  color: #333;
+}
+
+/* ===== Header ===== */
 .project-header {
   text-align: center;
-  padding: 40px 20px 20px;
-  background: #f5f5f5;
+  padding: 60px 20px 30px;
+  background: linear-gradient(135deg, #5a3e2b, #7b5a44); /* brown gradient */
+  color: white;
+  border-bottom: 4px solid #ccc;
 }
 
 .project-header h1 {
   margin: 0;
-  font-size: 2rem;
-  color: #222;
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 .project-subtitle {
-  color: #555;
-  margin-top: 8px;
-  font-size: 1rem;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ddd;
 }
 
+/* ===== Project Details Section ===== */
 .project-detail {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 50px auto;
   padding: 0 20px;
 }
 
 .project-content {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  border-left: 6px solid #5a3e2b; /* accent brown */
 }
 
 .project-content h2 {
   margin-top: 30px;
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.6rem;
+  color: #5a3e2b;
 }
 
 .project-content p, 
 .project-content ul {
   color: #444;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
+/* ===== Project Image ===== */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border: 2px solid #ddd;
+}
+
+/* ===== Back Link ===== */
 .back-link {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
   text-decoration: none;
-  color: #0077cc;
+  background: #5a3e2b;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
   font-weight: 600;
-  transition: color 0.2s ease;
+  transition: background 0.3s ease;
 }
 
 .back-link:hover {
-  color: #005fa3;
+  background: #7b5a44;
 }
